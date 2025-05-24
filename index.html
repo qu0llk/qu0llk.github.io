@@ -256,7 +256,7 @@
             <input type="email" placeholder="Email" class="box">
             <input type="number" placeholder="Number" class="box">
             <textarea name="" placeholder="Message" class="box" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="send message" class="btn">
+            <input type="submit" value="send message" class="btn" id="reserve-btn">
         </form>
     </section>
 
@@ -320,6 +320,14 @@
     <!-- Custom JS File Link  -->
     <script src="js/script.js"></script>
 
+
+    <script>   
+        document.getElementById('reserve-btn').addEventListener('click', function() {
+        ym(102137208,'reachGoal','reserve_click'); // ЗАМЕНИ 12345678 на свой ID счётчика!
+        });
+    </script>
+
+    
 </body>
 
 </html>
